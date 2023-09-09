@@ -9,10 +9,6 @@ html{
   overflow-x: hidden;
   overflow-y: scroll;
 }
-.profile-card {
-  width: 480px;
-  max-width: calc(100vw - 10px);
-}
 body {
   background-image: url('assets/greenline.2.jpg');
   background-repeat: no-repeat;
@@ -23,6 +19,101 @@ body {
   margin: 0 auto;
   font-family: 'Bagel Fat One', cursive;
   font-family: 'Raleway', sans-serif;
+}
+/* Fenti menük */
+#big-box {
+  background-image: url('assets/white.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  min-height: 120px;
+  width: 100vw;
+  list-style:none;
+}
+#big-box {
+  font-weight: 500;  
+  border-bottom:1px solid rgb(91, 169, 38);
+}
+.box {
+  height: 100%;
+  width: 33.3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left {
+  float: left;
+}
+#second-box{
+  position: relative;
+  right:-2px;
+}
+.box a {
+color: rgb(91, 169, 38);
+text-shadow: 1px 2px 1px rgb(17, 113, 8);
+text-align: center;
+line-height: 3;
+text-decoration: none;
+padding:20px 20px;
+margin: 0 auto;
+font-size: 20px;
+}
+#job{
+  color: rgb(91, 169, 38);
+text-shadow: 1px 2px 1px rgb(17, 113, 8);
+text-align: center;
+line-height: 3;
+text-decoration: none;
+padding:0 20px;
+margin: 0 auto;
+font-size: 20px;
+}
+#big-box a:hover{
+	background:rgba(0,0,0,.5);
+}
+#job:hover{
+  background:rgba(0,0,0,.5);
+}
+.has-submenu{
+	position:relative;
+}
+.has-submenu>a{
+	padding-right: 50px;
+}
+#job{
+  padding-right: 50px;
+}
+.has-submenu:hover .submenu{
+	display:block;
+}
+.submenu{
+	position:absolute;
+	width:200px;
+	display:none;
+	padding-left: 0px;
+	padding-right: 74px;
+}
+.has-submenu::after{
+	content:"🢓";
+	color:rgb(91, 169, 38);
+	position:absolute;
+	top:23px;
+	right:23px;
+}
+.submenu a{
+	background: #61706955;
+	padding:10px;
+  line-height: 2.2;
+}
+.box::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* névjegy */
+.profile-card {
+  width: 480px;
+  max-width: calc(100vw - 10px);
 }
 .profile {
   display: flex;
@@ -93,79 +184,7 @@ body {
   transform: scale(1.1);
   filter: grayscale(20%);
 }
-#big-box {
-  background-image: url('assets/white.jpg');
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-  min-height: 120px;
-  width: 100vw;
-  list-style:none;
-}
-#big-box {
-  font-weight: 500;  
-  border-bottom:1px solid rgb(91, 169, 38);
-}
-.box {
-  height: 100%;
-  width: 33.3%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.left {
-  float: left;
-}
-#second-box{
-  position: relative;
-  right:-2px;
-}
-.box a {
-color: rgb(91, 169, 38);
-text-shadow: 1px 2px 1px rgb(17, 113, 8);
-text-align: center;
-line-height: 3;
-text-decoration: none;
-padding:20px 20px;
-margin: 0 auto;
-font-size: 20px;
-}
-#big-box a:hover{
-	background:rgba(0,0,0,.5);
-}
-.has-submenu{
-	position:relative;
-}
-.has-submenu>a{
-	padding-right: 50px;
-}
-.has-submenu:hover .submenu{
-	display:block;
-}
-.submenu{
-	position:absolute;
-	width:200px;
-	display:none;
-	padding-left: 0px;
-	padding-right: 74px;
-}
-.has-submenu::after{
-	content:"🢓";
-	color:rgb(91, 169, 38);
-	position:absolute;
-	top:23px;
-	right:23px;
-}
-.submenu a{
-	background: #61706955;
-	padding:10px;
-  line-height: 2.2;
-}
-.box::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+
  /* Effect névjegyhez */
 #effect {
   background: #090d00;
@@ -208,7 +227,7 @@ font-size: 20px;
   }
 }
 
-/* Szükséged van egy effect */
+/* wordCarousel effect */
 #wordCarousel{
   max-width: calc(100vw - 10px);
 }
@@ -513,67 +532,8 @@ font-size: 20px;
     margin-top: -450px;
   }
 }
-/* Effect 2 */
-.effect-2 {
-  text-align:center;
-  color:#860f4d;
-  font-family: 'Bagel Fat One', cursive;
-  font-family: 'Raleway', sans-serif;
-  font-weight:350;
-  font-size:30px;
-  padding-top:5vh;
-  height:15vh;
-  overflow:hidden;
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
-  -webkit-transform: translate3d(0,0,0);
-}
-.modern a {
-  color:#f4eef1;
-  text-decoration: none;
-}
-.modern a:hover {
-  color: black;
-}
-.modern {
-  display:inline-block;
-  overflow:hidden;
-  white-space:nowrap;
-  margin-left: 20vw;
-}
-.modern:first-of-type {    /* For increasing performance 
-                       ID/Class should've been used. 
-                       For a small demo 
-                       it's okaish for now */
-  animation: showup 7s infinite;
-}
-.modern:last-of-type {
-  width:0px;
-  animation: reveal 7s infinite;
-}
-.modern:last-of-type span {
-  margin-left:-355px;
-  animation: slidein 7s infinite;
-}
-@keyframes showup {
-    0% {opacity:0;}
-    20% {opacity:1;}
-    80% {opacity:1;}
-    100% {opacity:0;}
-}
-@keyframes slidein {
-    0% { margin-left:-800px; }
-    20% { margin-left:-800px; }
-    35% { margin-left:0px; }
-    100% { margin-left:0px; }
-}
-@keyframes reveal {
-    0% {opacity:0;width:0px;}
-    20% {opacity:1;width:0px;}
-    30% {width:355px;}
-    80% {opacity:1;}
-    100% {opacity:0;width:355px;}
-}
+
+/* Pipás felsorolás */
 .canvas {
   display: flex;
   flex-wrap: wrap;
@@ -619,6 +579,7 @@ font-size: 20px;
   color: green;
   text-shadow: 3px 3px 3px rgba(47, 43, 43, 0.87);
 }
+/* Flex conténerek */
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -636,13 +597,13 @@ font-size: 20px;
 #flex1{
   background-color: rgba(255,255,255,.5);
   max-width:400px;
-  max-height: 600px;
+  max-height: 800px;
   border: 1rem solid rgba(255,255,255,.7); 
   border-image: linear-gradient(#f9f8f55f, #4e9f0cb3) 30;
 }
 .picture{
-  width: 80%;
-  height:50%;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   display: block;
   margin-top: 5px;
@@ -695,4 +656,65 @@ font-size: 20px;
   .modern {
     margin-left: 40vw;
   }
+}
+/* legalsó effect */
+.effect-2 {
+  text-align:center;
+  color:#860f4d;
+  font-family: 'Bagel Fat One', cursive;
+  font-family: 'Raleway', sans-serif;
+  font-weight:350;
+  font-size:30px;
+  padding-top:5vh;
+  height:15vh;
+  overflow:hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0,0,0);
+}
+.modern a {
+  color: black;
+  text-decoration: none;
+}
+.modern a:hover {
+  color: white;
+}
+.modern {
+  display:inline-block;
+  overflow:hidden;
+  white-space:nowrap;
+  margin-left: 20vw;
+}
+.modern:first-of-type {    /* For increasing performance 
+                       ID/Class should've been used. 
+                       For a small demo 
+                       it's okaish for now */
+  animation: showup 7s infinite;
+}
+.modern:last-of-type {
+  width:0px;
+  animation: reveal 7s infinite;
+}
+.modern:last-of-type span {
+  margin-left:-355px;
+  animation: slidein 7s infinite;
+}
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:355px;}
+    80% {opacity:1;}
+    100% {opacity:0;width:355px;}
 }
