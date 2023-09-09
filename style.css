@@ -98,7 +98,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  height: 25vh;
+  min-height: 120px;
   width: 100vw;
   list-style:none;
 }
