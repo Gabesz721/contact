@@ -30,6 +30,9 @@ body {
   width: 100vw;
   list-style:none;
 }
+menu {
+  list-style:none;
+}
 #big-box {
   font-weight: 500;  
   border-bottom:1px solid rgb(91, 169, 38);
@@ -110,8 +113,6 @@ font-size: 20px;
   clear: both;
   display: table;
 }
-
-
 /* névjegy */
 .profile-image:before {
   content: "";
@@ -127,10 +128,10 @@ font-size: 20px;
         #4ac225 330deg
     );
   -webkit-mask:
-    linear-gradient(#000 0 0) content-box,
-    linear-gradient(#000 0 0);
+    linear-gradient(#000000fe 0 0) content-box,
+    linear-gradient(#000000fe 0 0);
   -webkit-mask-composite: xor;
-          mask-composite: intersect
+    mask-composite: intersect
 }
 .profile-image:after {
   content: "";
@@ -320,14 +321,11 @@ font-size: 20px;
   margin-bottom:45px;
   display: block;
   position: relative;
-  left: -30;
-  bottom:-10;
   font-size: 40px;
   padding: 15px 10px 10px 7px;
 }
 .wordCarousel-3 {
   position: relative;
-  left: -20;
   font-size: 35px;
   font-weight: 100;
   color: black;
@@ -660,7 +658,7 @@ font-size: 20px;
   margin-left: auto;
   margin-right: auto;
 }
-#flex1{
+.flex1{
   background-color: rgba(255,255,255,.5);
   max-width:400px;
   max-height: 800px;
