@@ -2,7 +2,12 @@
   margin: 0;
   padding:0;
   box-sizing: border-box;
-  font-size: 100%;
+}
+h1,h2,h3,h4,h5,h6,hgroup,
+ul,ol,dd,
+p,figure,
+pre,table,fieldset,hr,.head{
+    margin-bottom: 2rem;
 }
 html{
   width: 100vw;
@@ -14,11 +19,10 @@ body {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  height: 100%;
-  width: 100%;
   margin: 0 auto;
-  font-family: 'Bagel Fat One', cursive;
-  font-family: 'Raleway', sans-serif;
+  font-family: Merriweather, 'Times New Roman', serif;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 /* Fenti menük */
 #big-box {
@@ -27,8 +31,9 @@ body {
   background-attachment: scroll;
   background-size: cover;
   min-height: 120px;
-  width: 100vw;
+  width: 100%;
   list-style:none;
+  text-align: center;
 }
 menu {
   list-style:none;
@@ -57,9 +62,9 @@ text-shadow: 1px 2px 1px rgb(17, 113, 8);
 text-align: center;
 line-height: 3;
 text-decoration: none;
-padding:20px 20px;
+padding: 1.25rem 1.25rem;
 margin: 0 auto;
-font-size: 20px;
+font-size: 1.25rem;
 }
 #job{
   color: rgb(91, 169, 38);
@@ -67,9 +72,9 @@ text-shadow: 1px 2px 1px rgb(17, 113, 8);
 text-align: center;
 line-height: 3;
 text-decoration: none;
-padding:0 20px;
+padding:0 1.25rem;
 margin: 0 auto;
-font-size: 20px;
+font-size: 1.25rem;
 }
 #big-box a:hover{
 	background:rgba(0,0,0,.5);
@@ -81,31 +86,30 @@ font-size: 20px;
 	position:relative;
 }
 .has-submenu>a{
-	padding-right: 50px;
+	padding-right: 3.125rem;
 }
 #job{
-  padding-right: 50px;
+  padding-right: 3.125rem;
 }
 .has-submenu:hover .submenu{
 	display:block;
 }
 .submenu{
 	position:absolute;
-	width:200px;
+	width: 160px;
 	display:none;
-	padding-left: 0px;
-	padding-right: 74px;
+	padding-right: 4.625rem;
 }
 .has-submenu::after{
 	content:"🢓";
 	color:rgb(91, 169, 38);
 	position:absolute;
-	top:23px;
-	right:23px;
+	top:1.4375rem;
+	right:1.4375rem;
 }
 .submenu a{
 	background: #61706955;
-	padding:10px;
+	padding:0.625rem;
   line-height: 2.2;
 }
 .box::after {
@@ -118,7 +122,7 @@ font-size: 20px;
   content: "";
   position: absolute;
   inset: 0px;
-  padding: 10px;
+  padding: 0.625rem;
   border-radius: 50%; 
   background: conic-gradient(
         #53ffa0 ,
@@ -176,11 +180,7 @@ font-size: 20px;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  font-family: 'Bagel Fat One', cursive;
-  font-family: 'Raleway', sans-serif;
-  border-top: 1px solid rgb(91, 169, 38);
-  border-bottom:1px solid rgb(91, 169, 38);
-  border-image: linear-gradient(to left, #000 30%, transparent 40%) 100% 1;
+  font-family: 'Open Sans', sans-serif;
 }
 .head, .links {
   text-align: center;
@@ -197,10 +197,10 @@ font-size: 20px;
   position: relative;
 }
 .profile-image {
-  margin-top: -90px;
+  margin-top: -5.625rem;
   width: 200px;
   height: 200px;
-  font-size:30px;
+  font-size:1.875rem;
   color: #fff;
   background: none;
   border: none;
@@ -209,7 +209,7 @@ font-size: 20px;
   z-index: 0;
   transition: .3s;
   cursor: pointer;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 .head, .about {
   margin-bottom: 10%;
@@ -218,24 +218,19 @@ font-size: 20px;
   text-align: center;
 }
 .about p {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 .about h1 {
-  font-size: 25px;
-  margin-bottom: 10px;
+  font-size: 1.5625rem;
+  margin-bottom: 0.625rem;
 }
 .content {
   padding: 10% 10%;
 }
 .profile {
-  background-image: url('assets/greenline3.jpg');
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position-x: right; 
   background-size: 50% 100%;
   height: 100%;
   width: 100%;
-  margin: 0 auto;
 }
 .profile-card {
   background-color: hsla(0, 0%, 100%, .5);
@@ -293,43 +288,42 @@ font-size: 20px;
     background-position: 100% 50%;
   }
 }
-
 /* wordCarousel effect */
 #wordCarousel{
   max-width: calc(100vw - 10px);
 }
 .wordCarousel {
-  font-size: 35px;
+  font-size: 2.1875rem;
   font-weight: 100;
   color: black;
   position: relative;
-  padding-top: 20px;
+  padding-top: 1.25rem;
 }
 .wordCarousel-2 {
   overflow: hidden;
   position: relative;
   float: right;
   height: 65px;
-  padding-top: 10px;
-  padding-bottom: 20px;
+  padding-top: 0.625rem;
+  padding-bottom: 1.25rem;
 }
 .wordCarousel-2 li {
-  font-family: Serif;
+  font-family: 'Open Sans', sans-serif;
   color: green;
   font-weight: 700;
   height: 45px;
-  margin-bottom:45px;
+  margin-bottom: 2.8125rem;
   display: block;
   position: relative;
-  font-size: 40px;
-  padding: 15px 10px 10px 7px;
+  font-size: 2.5rem;
+  padding: 0.9375rem 0.625rem 0.625rem 0.4375rem;
 }
 .wordCarousel-3 {
   position: relative;
-  font-size: 35px;
+  font-size: 2.1875rem;
   font-weight: 100;
   color: black;
-  padding-top: 20px;
+  padding-top: 1.25rem;
 }
 #wordCarousel {
   margin: 0;
@@ -337,7 +331,7 @@ font-size: 20px;
   overflow: hidden;
 }
 #wordCarousel {
-  font-family: "Roboto Condensed", cursive;
+  font-family: 'Open Sans', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -347,62 +341,9 @@ font-size: 20px;
   display: block;
   position: absolute;
 }
-.flip2 {
-  -webkit-animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
-          animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
-}
 .flip3 {
   -webkit-animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
           animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
-}
-.flip4 {
-  -webkit-animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
-          animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
-}
-.flip5 {
-  -webkit-animation: flip5 12s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
-          animation: flip5 12s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
-}
-@-webkit-keyframes flip2 {
-  0% {
-    margin-top: -180px;
-  }
-  5% {
-    margin-top: -90px;
-  }
-  50% {
-    margin-top: -90px;
-  }
-  55% {
-    margin-top: 0px;
-  }
-  99.99% {
-    margin-top: 0px;
-  }
-  100% {
-    margin-top: -180px;
-  }
-}
-
-@keyframes flip2 {
-  0% {
-    margin-top: -180px;
-  }
-  5% {
-    margin-top: -90px;
-  }
-  50% {
-    margin-top: -90px;
-  }
-  55% {
-    margin-top: 0px;
-  }
-  99.99% {
-    margin-top: 0px;
-  }
-  100% {
-    margin-top: -180px;
-  }
 }
 @-webkit-keyframes flip3 {
   0% {
@@ -456,147 +397,6 @@ font-size: 20px;
     margin-top: -270px;
   }
 }
-@-webkit-keyframes flip4 {
-  0% {
-    margin-top: -360px;
-  }
-  5% {
-    margin-top: -270px;
-  }
-  25% {
-    margin-top: -270px;
-  }
-  30% {
-    margin-top: -180px;
-  }
-  50% {
-    margin-top: -180px;
-  }
-  55% {
-    margin-top: -90px;
-  }
-  75% {
-    margin-top: -90px;
-  }
-  80% {
-    margin-top: 0px;
-  }
-  99.99% {
-    margin-top: 0px;
-  }
-  100% {
-    margin-top: -360px;
-  }
-}
-@keyframes flip4 {
-  0% {
-    margin-top: -360px;
-  }
-  5% {
-    margin-top: -270px;
-  }
-  25% {
-    margin-top: -270px;
-  }
-  30% {
-    margin-top: -180px;
-  }
-  50% {
-    margin-top: -180px;
-  }
-  55% {
-    margin-top: -90px;
-  }
-  75% {
-    margin-top: -90px;
-  }
-  80% {
-    margin-top: 0px;
-  }
-  99.99% {
-    margin-top: 0px;
-  }
-  100% {
-    margin-top: -360px;
-  }
-}
-@-webkit-keyframes flip5 {
-  0% {
-    margin-top: -450px;
-  }
-  5% {
-    margin-top: -360px;
-  }
-  20% {
-    margin-top: -360px;
-  }
-  25% {
-    margin-top: -270px;
-  }
-  40% {
-    margin-top: -270px;
-  }
-  45% {
-    margin-top: -180px;
-  }
-  60% {
-    margin-top: -180px;
-  }
-  65% {
-    margin-top: -90px;
-  }
-  80% {
-    margin-top: -90px;
-  }
-  85% {
-    margin-top: 0px;
-  }
-  99.99% {
-    margin-top: 0px;
-  }
-  100% {
-    margin-top: -450px;
-  }
-}
-@keyframes flip5 {
-  0% {
-    margin-top: -450px;
-  }
-  5% {
-    margin-top: -360px;
-  }
-  20% {
-    margin-top: -360px;
-  }
-  25% {
-    margin-top: -270px;
-  }
-  40% {
-    margin-top: -270px;
-  }
-  45% {
-    margin-top: -180px;
-  }
-  60% {
-    margin-top: -180px;
-  }
-  65% {
-    margin-top: -90px;
-  }
-  80% {
-    margin-top: -90px;
-  }
-  85% {
-    margin-top: 0px;
-  }
-  99.99% {
-    margin-top: 0px;
-  }
-  100% {
-    margin-top: -450px;
-  }
-}
-
 /* Pipás felsorolás */
 .canvas {
   display: flex;
@@ -607,7 +407,7 @@ font-size: 20px;
   max-width: calc(100vw - 10px);
   margin: 0 auto;
   max-height: 360px;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 .canvas > div {
   display: block;
@@ -620,21 +420,21 @@ font-size: 20px;
   border-image: linear-gradient(#4e9f0cb3, #f9f8f55f) 30;
 }
 .altalanos1 {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 200;
   color: rgb(12, 91, 6);
   position: relative;
-  padding:20px 0 20px 0;
+  padding:1.25rem 0 1.25rem 0;
   font-family: Serif;
   font-weight: 100;
   text-align: center;
 }
 .altalanos2 {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 200;
   color: black;
   position: relative;
-  padding:10px;
+  padding:0.625rem;
   font-family: Serif;
   font-weight: 100;
   text-align: left;
@@ -649,11 +449,10 @@ font-size: 20px;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  max-width: calc(100vw - 10px);
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 .flex-container > div {
-  margin: 10px;
+  margin: 0.625rem;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -670,56 +469,29 @@ font-size: 20px;
   height: 300px;
   border-radius: 25% 10%;
   display: block;
-  margin-top: 5px;
+  margin-top: 0.3125rem;
   margin-left: auto;
   margin-right: auto;
 }
 .text {
-  font-size: 30px;
+  font-size: 1.825rem;
   text-align: center;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 0.9375rem;
+  margin-bottom: 0.9375rem;
   color: green;
 }
 .text2 {
-  font-size: 15px;
-  margin-top: 10px;
+  font-size: 0.9375rem;
+  margin-top: 0.625rem;
 }
-
 .modern {
   text-align: left;
 }
 .effect721 {
-  font-size: 16px;
+  font-size: 1rem;
 }
-@media screen and (min-width: 320px) {
-  .effect721 {
-    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
-  }
-}
-@media screen and (min-width: 1000px) {
-  .effect721 {
-    font-size: 22px;
-  }
-}
-
 .effect722 {
-  font-size: 40px;
-}
-@media screen and (min-width: 320px) {
-  .effect722 {
-    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
-  }
-}
-@media screen and (min-width: 1000px) {
-  .effect722 {
-    font-size: 30px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .modern {
-    margin-left: 40vw;
-  }
+  font-size: 2.5rem;
 }
 /* legalsó effect */
 .effect-2 {
@@ -728,9 +500,7 @@ font-size: 20px;
   font-family: 'Bagel Fat One', cursive;
   font-family: 'Raleway', sans-serif;
   font-weight:350;
-  font-size:30px;
-  padding-top:5vh;
-  height:15vh;
+  font-size: 1.875rem;
   overflow:hidden;
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
@@ -781,4 +551,401 @@ font-size: 20px;
     30% {width:355px;}
     80% {opacity:1;}
     100% {opacity:0;width:355px;}
+}
+
+
+
+/* Reszponziv max méret 281px*/
+@media screen and (max-width: 281px) {
+  .about h1 {
+    top: 50px;
+    position: relative;
+  }
+  .about p {
+    font-size: 1.25rem;
+    top: 65px;
+    position: relative;
+  }
+  #job {
+    left: 2px;
+    position: relative;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .box a {
+    left: -18px;
+        position: relative;
+    }
+  .my-jobs{
+      left: 20px;
+      position: relative;
+    }
+  #effect {
+    left: 189px;
+  }
+  .content {
+    padding: 35% 10%;
+  }
+  .wordCarousel {
+    font-size: 0.7rem;
+  }
+  .wordCarousel-2 li {
+    font-size: 1rem;
+    top: 8px;
+    right: -5px;
+  }
+  .altalanos1{
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .canvas {
+    max-height: 660px;
+  }
+  .text2 {
+    text-align: center;
+  }
+  .picture {
+    width: 230px;
+  }
+  .flex-container > div {
+    width: 95vw;
+  }
+  .effect-2 p{
+    margin-bottom: 0;
+  }
+  .effect-2 a{
+    position: relative;
+    left: 35px;
+  }
+}
+/* Reszponziv 281px- 395px ig*/
+@media screen and (min-width: 281px) and (max-width: 395px) { 
+  .about h1 {
+    top: 50px;
+    position: relative;
+  }
+  .about p {
+    font-size: 1.25rem;
+    top: 65px;
+    position: relative;
+  }
+  #job {
+    left: 2px;
+    position: relative;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .box a {
+    left: -18px;
+        position: relative;
+    }
+  .my-jobs{
+      left: 20px;
+      position: relative;
+    }
+  #effect {
+    left: 189px;
+  }
+  .content {
+    padding: 35% 10%;
+  }
+  .wordCarousel {
+    font-size: 0.7rem;
+  }
+  .wordCarousel-2 li {
+    font-size: 1rem;
+    top: 8px;
+    right: -5px;
+  }
+  .altalanos1{
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .canvas {
+    max-height: 660px;
+  }
+  .text2 {
+    text-align: center;
+  }
+  .picture {
+    width: 230px;
+  }
+  .flex-container > div {
+    width: 95vw;
+  }
+  .effect-2 p{
+    margin-bottom: 0;
+  }
+  .effect-2 a{
+    position: relative;
+    left: 35px;
+  }
+}
+/* Reszponziv 359px - 394px ig*/
+@media screen and (min-width: 359px) and (max-width: 394px) { 
+  #job {
+    left: 5px;
+    position: relative;
+  }
+  .box a {
+    left: -3px;
+        position: relative;
+    }
+  .my-jobs{
+      left: 23px;
+      position: relative;
+    }
+  #effect {
+    width: 100%;
+  }
+  .content {
+    padding: 34% 10%;
+}
+  .wordCarousel {
+    font-size: 1rem;
+  }
+  .wordCarousel-2 li {
+    font-size: 1.5rem;
+    top: 4px;
+    right: -2px;
+}
+  .altalanos1{
+    text-align: center;
+  }
+  .canvas {
+    max-height: 600px;
+  }
+  .text2 {
+    text-align: center;
+  }
+  .effect-2 p{
+    margin-bottom: 0;
+    font-size: 1.5rem;
+  }
+  .effect-2 a{
+    position: relative;
+    left: 50px;
+    font-size: 1.4rem;
+  }
+}
+/* Reszponziv 395px- 638px ig*/
+@media screen and (min-width: 395px) and (max-width: 638px) { 
+  #job {
+    left: 5px;
+    position: relative;
+  }
+  .box a {
+    left: -3px;
+        position: relative;
+    }
+  .my-jobs{
+      left: 16px;
+      position: relative;
+    }
+  .content {
+    padding: 20% 10%;
+  }
+  .wordCarousel {
+    font-size: 1rem;
+  }
+  .wordCarousel-2 li {
+    font-size: 1.5rem;
+    top: 4px;
+    right: -2px;
+  }
+  .altalanos1{
+    text-align: center;
+  }
+  .canvas {
+    max-height: 600px;
+  }
+  .text2 {
+    text-align: center;
+  }
+  .effect-2 p{
+    margin-bottom: 0;
+    font-size: 1.8rem;
+  }
+  .effect-2 a{
+    position: relative;
+    left: 37px;
+    font-size: 2rem;
+  }
+}
+/* Reszponziv 411px- 415px ig*/
+@media screen and (min-width: 411px) and (max-width: 415px) { 
+  #job {
+    left: 5px;
+    position: relative;
+  }
+  .box a {
+    left: -3px;
+        position: relative;
+    }
+  .my-jobs{
+      left: 16px;
+      position: relative;
+    }
+  #effect {
+    left: 213px;
+  }
+  .content {
+    padding: 20% 10%;
+  }
+  .wordCarousel {
+    font-size: 1rem;
+  }
+  .wordCarousel-2 li {
+    font-size: 1.5rem;
+    top: 4px;
+    right: -2px;
+  }
+  .altalanos1{
+    text-align: center;
+  }
+  .canvas {
+    max-height: 600px;
+  }
+  .text2 {
+    text-align: center;
+  }
+  .effect-2 p{
+    margin-bottom: 0;
+    font-size: 1.8rem;
+  }
+  .effect-2 a{
+    position: relative;
+    left: 37px;
+    font-size: 2rem;
+  }
+}
+/* Reszponziv méret 360px*/
+@media screen and (width: 360px){
+#effect {
+    left: 192px;
+  }
+  .canvas {
+    max-height: 600px;
+  }
+  .text2 {
+    text-align: center;
+  }
+  .effect-2 p{
+    margin-bottom: 0;
+  }
+  .effect-2 a{
+    position: relative;
+    left: 50px;
+  }
+}
+/* Reszponziv 416px- 1279px ig*/
+@media screen and (min-width: 416px) and (max-width: 1279px) { 
+  .canvas {
+    max-height: 600px;
+  }
+  .text2 {
+    text-align: center;
+  }
+}
+/* Reszponziv 416px- 799px ig*/
+@media screen and (min-width: 416px) and (max-width: 799px) {
+  .effect-2 p{
+    margin-bottom: 0;
+    font-size: 1.8rem;
+  }
+  .effect-2 a{
+    position: relative;
+    left: 42px;
+    font-size: 2rem;
+  }
+}
+/* Reszponziv 639px- 1279px ig*/
+@media screen and (min-width: 639px) and (max-width: 1279px) { 
+  .about h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+  }
+  .wordCarousel {
+    font-size: 1.7rem;
+  }
+  .wordCarousel-2 li {
+    font-size: 2rem;
+    top: 2px;
+    right: -6px;
+  }
+  .wordCarousel-3 {
+    font-size: 1.7rem;
+  }
+  #smallsquare {
+  max-width: 500px;
+  }
+}
+/* Reszponziv 799px- 1279px ig*/
+@media screen and (min-width: 799px) and (max-width: 1279px) { 
+  .effect-2 p{
+    margin-bottom: 0;
+    font-size: 3.8rem;
+  }
+  .effect-2 a{
+    position: relative;
+    right: 0px;
+    font-size: 2.5rem;
+  }
+}
+/* Reszponziv min méret 1280px*/
+@media screen and (min-width: 1280px){
+  .about h1 {
+    font-size: 1.5625rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .profile {
+    background-image: url('assets/greenline3.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position-x: right; 
+    background-size: 50% 100%;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .profile {
+    border-top: 1px solid rgb(91, 169, 38);
+    border-bottom:1px solid rgb(91, 169, 38);
+    border-image: linear-gradient(to left, #000 30%, transparent 40%) 100% 1;
+  }
+  .canvas {
+    max-height: 600px;
+  }
+  .text2 {
+    text-align: center;
+    font-size: 1.7rem;
+  }
+  .wordCarousel {
+    font-size: 2.7rem;
+  }
+  .wordCarousel-2 li {
+    font-size: 3rem;
+    top: -8px;
+    right: -3px;
+  }
+  .wordCarousel-3 {
+    font-size: 2.7rem;
+  }
+  #smallsquare {
+    max-width: 500px;
+    }
+    .effect-2 p{
+      margin-bottom: 0;
+      font-size: 3.8rem;
+    }
+    .effect-2 a{
+      position: relative;
+      right: -70px;
+      font-size: 2.5rem;
+    }
+    .effect-2 div{
+      margin-left: 0;
+    }
 }
